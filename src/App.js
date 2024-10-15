@@ -1,24 +1,36 @@
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
+import Profile from "./pages/Profile";
+
+function Home() {
+  return(
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to my site.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Link className="App-link" to="/profile">
+          {"Know me more ;)"}
+        </Link>
       </header>
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Fragment>
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+        </Fragment>
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,54 @@
+.profile-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  background-color: #333;
+  color: #fff;
+  height: 180px;
+  padding: 20px;
+  margin: -20px -20px 5px -20px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-header h1 {
+  margin: 0;
+}
+
+.profile-picture-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-content {
+  padding: 20px;
+  margin-top: 80px; /* adjust this value to match the height of the profile picture */
+}
+
+.profile-stats {
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-info h2 {
+  margin: 0;
+}
