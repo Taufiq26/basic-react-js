@@ -22,14 +22,29 @@ function Profile() {
             <div className="col-4 text-center">
               <p>Followers</p>
               <p>{followers}</p>
+              <span
+                className="btn btn-outline-primary suptag" 
+                onClick={() => setFollowers(followers+100)}>
+                  +100
+              </span>
             </div>
             <div className="col-4 text-center">
               <p>Following</p>
               <p>{following}</p>
+              <span
+                className="btn btn-outline-primary suptag" 
+                onClick={() => setFollowing(following+100)}>
+                  +100
+              </span>
             </div>
             <div className="col-4 text-center">
               <p>Posts</p>
               <p>{posts}</p>
+              <span
+                className="btn btn-outline-primary suptag" 
+                onClick={() => setPosts(posts+1)}>
+                  +1
+              </span>
             </div>
           </div>
         </div>
